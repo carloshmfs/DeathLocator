@@ -16,5 +16,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'MultiLoader'
+rootProject.name = 'DeathLocator'
 include("Common", "Fabric", "Forge")

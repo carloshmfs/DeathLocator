@@ -1,6 +1,6 @@
-package com.example.examplemod.mixin;
+package dev.carloshmfs.deathlocator.mixin;
 
-import com.example.examplemod.Constants;
+import dev.carloshmfs.deathlocator.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

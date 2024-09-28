@@ -1,7 +1,7 @@
-package com.example.examplemod.platform;
+package dev.carloshmfs.deathlocator.platform;
 
-import com.example.examplemod.Constants;
-import com.example.examplemod.platform.services.IPlatformHelper;
+import dev.carloshmfs.deathlocator.Constants;
+import dev.carloshmfs.deathlocator.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 

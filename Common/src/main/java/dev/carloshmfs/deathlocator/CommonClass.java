@@ -1,6 +1,6 @@
-package com.example.examplemod;
+package dev.carloshmfs.deathlocator;
 
-import com.example.examplemod.platform.Services;
+import dev.carloshmfs.deathlocator.platform.Services;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;

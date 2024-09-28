@@ -1,5 +1,7 @@
-package com.example.examplemod;
+package dev.carloshmfs.deathlocator;
 
+import dev.carloshmfs.deathlocator.CommonClass;
+import dev.carloshmfs.deathlocator.Constants;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 
