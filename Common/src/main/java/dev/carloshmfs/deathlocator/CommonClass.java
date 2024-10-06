@@ -22,7 +22,7 @@ public class CommonClass {
     public static void init() {
 
 //        Constants.LOG.info("Hello from Common init on {}! we are currently in a {} environment!", Services.PLATFORM.getPlatformName(), Services.PLATFORM.isDevelopmentEnvironment() ? "development" : "production");
-        Constants.LOG.info("Diamond Item >> {}", Registry.ITEM.getKey(Items.DIAMOND));
+        // Constants.LOG.info("Diamond Item >> {}", Registry.ITEM.getKey(Items.DIAMOND));
     }
 
     // This method serves as a hook to modify item tooltips. The vanilla game
@@ -30,16 +30,16 @@ public class CommonClass {
     // by a mod loader like Forge or Fabric.
     public static void onItemTooltip(ItemStack stack, TooltipFlag context, List<Component> tooltip) {
 
-        if (!stack.isEmpty()) {
+        // if (!stack.isEmpty()) {
 
-            final FoodProperties food = stack.getItem().getFoodProperties();
+        //     final FoodProperties food = stack.getItem().getFoodProperties();
 
-            if (food != null) {
+        //     if (food != null) {
 
-                tooltip.add(Component.literal("Nutrition: " + food.getNutrition()));
-                tooltip.add(Component.literal("Saturation: " + food.getSaturationModifier()));
-            }
-        }
+        //         tooltip.add(Component.literal("Nutrition: " + food.getNutrition()));
+        //         tooltip.add(Component.literal("Saturation: " + food.getSaturationModifier()));
+        //     }
+        // }
     }
 
     public static void onLivingEntityDeath(Entity entity) {
@@ -51,13 +51,14 @@ public class CommonClass {
     public static void onPlayerDeath(Player player) {
         String playerLocation = player.getBlockX() + " " + player.getBlockY() + " " + player.getBlockZ();
 
-        String defaultDeathMessage = player.getCombatTracker().getDeathMessage().getString();
-        Component customDeathMessage = Component.literal(defaultDeathMessage + " at location " + playerLocation);
+        // String defaultDeathMessage = player.getCombatTracker().getDeathMessage().getString();
+        String playerName = player.getGameProfile().getName();
+        Component customDeathMessage = Component.literal(playerName + " morreu em " + playerLocation);
 
         try {
             Objects.requireNonNull(player.getServer()).getPlayerList().broadcastSystemMessage(customDeathMessage, false);
         } catch (NullPointerException e) {
-             System.out.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 }

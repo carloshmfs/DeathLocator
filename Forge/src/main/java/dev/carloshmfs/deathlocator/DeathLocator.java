@@ -30,7 +30,6 @@ public class DeathLocator {
     }
 
     private void onLivingEntityDeath(LivingDeathEvent event) {
-        event.setCanceled(true);
         CommonClass.onLivingEntityDeath(event.getEntity());
     }
 }
