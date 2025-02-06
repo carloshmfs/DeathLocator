@@ -3,10 +3,10 @@
     "id": "modid",
     "version": "${version}",
   
-    "name": "Example Mod",
+    "name": "Death Locator",
     "description": "This is an example description! Tell everyone what your mod is about!",
     "authors": [
-      "Me!"
+      "Mr_Robott1"
     ],
     "contact": {
       "homepage": "https://fabricmc.net/",
@@ -19,7 +19,7 @@
     "environment": "*",
     "entrypoints": {
       "main": [
-        "dev.carloshmfs.deathlocator.ExampleMod"
+        "dev.carloshmfs.deathlocator.DeathLocator"
       ]
     },
     "mixins": [
