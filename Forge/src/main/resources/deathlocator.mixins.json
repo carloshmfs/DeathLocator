@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "dev.carloshmfs.deathlocator.mixion",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+    ],
+    "server": [
+      "ServerPlayerMixin"
+    ],
+    "injectors": {
+      "defaultRequire": 1
+    },
+    "refmap": "deathlocator.refmap.json"
+}
