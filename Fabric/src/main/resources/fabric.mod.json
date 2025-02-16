@@ -3,14 +3,14 @@
     "id": "modid",
     "version": "${version}",
   
-    "name": "Death Locator",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "name": "DeathLocator",
+    "description": "A mod that shows your position on death chat messages.",
     "authors": [
       "Mr_Robott1"
     ],
     "contact": {
       "homepage": "https://fabricmc.net/",
-      "sources": "https://github.com/FabricMC/fabric-example-mod"
+      "sources": "https://github.com/carloshmfs/DeathLocator"
     },
   
     "license": "CC0-1.0",
