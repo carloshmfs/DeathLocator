@@ -9,14 +9,14 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(ServerPlayer.class)
 public class ServerPlayerMixin {
-    @ModifyVariable(method = "die()V", at = @At("STORE"), ordinal = 0)
+    @ModifyVariable(method = "die", at = @At("STORE"), ordinal = 0)
     private Component modifyDeathMessage(Component originalMessage) {
         ServerPlayer thisObject = (ServerPlayer)(Object)this;
         Vec3 playerPos = thisObject.position();
 
         return Component.literal(
                 String.format(
-                        "%s at %.1f %.1f %.1f",
+                        "%s at %.0f %.0f %.0f",
                         originalMessage.getString(),
                         playerPos.x,
                         playerPos.y,

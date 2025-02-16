@@ -1,8 +1,9 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "dev.carloshmfs.deathlocator.mixion",
+    "package": "dev.carloshmfs.deathlocator.mixin",
     "compatibilityLevel": "JAVA_17",
+    "refmap": "deathlocator.refmap.json",
     "mixins": [
     ],
     "server": [
@@ -10,6 +11,5 @@
     ],
     "injectors": {
       "defaultRequire": 1
-    },
-    "refmap": "deathlocator.refmap.json"
+    }
 }

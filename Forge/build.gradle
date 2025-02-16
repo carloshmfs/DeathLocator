@@ -81,7 +81,7 @@ dependencies {
 
 mixin {
     add sourceSets.main, 'deathlocator.refmap.json'
-    config 'deathlocator.mixins.json'
+    config "deathlocator.mixins.json"
 }
 
 tasks.withType(JavaCompile) {
@@ -91,7 +91,6 @@ tasks.withType(JavaCompile) {
 processResources {
     from project(":Common").sourceSets.main.resources
 }
-
 
 jar.finalizedBy('reobfJar')
 
