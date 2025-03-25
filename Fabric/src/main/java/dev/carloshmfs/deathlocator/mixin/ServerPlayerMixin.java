@@ -1,5 +1,6 @@
 package dev.carloshmfs.deathlocator.mixin;
 
+import dev.carloshmfs.deathlocator.CommonClass;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.phys.Vec3;
@@ -14,14 +15,6 @@ public class ServerPlayerMixin {
         ServerPlayer thisObject = (ServerPlayer)(Object)this;
         Vec3 playerPos = thisObject.position();
 
-        return Component.literal(
-            String.format(
-                "%s at %.0f %.0f %.0f",
-                originalMessage.getString(),
-                playerPos.x,
-                playerPos.y,
-                playerPos.z
-            )
-        );
+        return CommonClass.getFormatedDeathMessage(originalMessage.getString(), playerPos);
     }
 }
