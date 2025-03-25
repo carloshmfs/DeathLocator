@@ -4,8 +4,6 @@
     "package": "dev.carloshmfs.deathlocator.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
-    ],
-    "server": [
       "ServerPlayerMixin"
     ],
     "injectors": {

@@ -5,9 +5,7 @@
     "compatibilityLevel": "JAVA_17",
     "refmap": "deathlocator.refmap.json",
     "mixins": [
-    ],
-    "server": [
-      "ServerPlayerMixin"
+        "ServerPlayerMixin"
     ],
     "injectors": {
       "defaultRequire": 1
